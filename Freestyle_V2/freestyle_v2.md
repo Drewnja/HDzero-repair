@@ -19,6 +19,8 @@
    **How to check if PA is dead:**
    1. Try to check if any 5V0 pad is shorted to GND. If it is, then you have dead PA.
    2. On the particular Freestyle v2 board, there are two red LEDs soldered in reversed order. (So only one should be on at a time). Official HDzero docs say that one of "the red LEDs on the board" is indicator of PA failure. However, they forgot to pu the image of WHICH LED is indicator. But id you can see all red LEDs are on, then you have dead PA.
+   3. You can also measure the voltage on 5V0 pad with a multimeter, if it is around 0.2V, then you most probably have dead PA. (But also that could be MPQ4470GL, but thats usually not the case.)
+   4. If you can hear the hight pitch noises from vtx, then you might have dead PA. Usually theese noises are coming from a poor MPQ4470GL, trying to pump voltage in to the shorted SKY66288-11. (But thats not 100% correct, please try 1-3 of theese steps to check if you have dead PA.)
    
 2. **MP2122 is dead (no power on board):**
    Somestimes MP2122 just decide to die without any reason. If your board doesnt have any LEDs light up on power on, then you most likely have dead MP2122.
